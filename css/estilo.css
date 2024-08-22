@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@keyframes sombra {
+    from{
+        box-shadow: 0 0 30px aqua;
+    }
+    to{
+        box-shadow: none;
+    }
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+.site{
+    position: relative;
+    width: 1000px;
+    height: auto;
+    margin: auto;
+}
+.topo{
+    position: relative;
+    width: 100%;
+    height: 150px;
+}
+.logo{
+    position: relative;
+    margin: auto;
+    height: 150px;
+    width: 355px;
+}
+.menu{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: aqua;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 0 20px aqua;
+}
+.menu ul{
+    display: flex;
+    justify-content: center;
+    /* retirar icone da lista */
+    list-style: none;
+    /* retirar o espaçamento dos marcadores da lista */
+    padding-left: 0;
+    margin: 0;
+}
+
+.menu ul li a{
+    float: left;
+    padding: 15px 40px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.menu ul li a:hover{
+    color: aqua;
+    background-color: white;
+    transition: 0.9s;
+    cursor: pointer;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: url(../imagens/banner.jpg) center;
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+}
+.banner h1, .banner p{
+    color: aqua;
+    margin: 0;
+}
+.fundo-banner{
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.conteudo{
+    position: relative;
+    width: 100%;
+    height: 800px;
+    margin: 50px 0;
+}
+.box{
+    position: relative;
+    width: 300px;
+    height: 800px;
+    float: left;
+    margin-right: 50px;
+    border: 1px rgb(53, 212, 240) solid;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 0 10px aqua;
+    animation: sombra infinite 2s ;
+}
+.box:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+}
+.box:last-child{
+    margin-right: 0;
+}
+.box img{
+    width: 100%;
+    height: 507px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.box h2, .box p{
+    padding: 10px;
+    margin: 0;
+}
+.box h2{
+    text-align: center;
+}
+.box p{
+    font-size: 17px;
+}
+.rodape{
+    position: relative;
+    width: 100%;
+    height: 150px;
+}
+.rodape-coluna{
+    position: relative;
+    width: 33%;
+    height: 150px;
+    float: left;
+}
+.rodape-coluna ul{
+    list-style: none;
+    padding-left: 0;
+}
+.rodape-coluna ul li a{
+    color: inherit;
+    text-decoration: none;
+}
+.lista-rodape li {
+    margin-bottom: 10px;
+}
+.icone-rodape li{
+    margin-left: 10px;
+    float: left;
+    font-size: 30px;
+}
+.icone-rodape li a{
+    padding: 5px 10px;
+    background-color: aqua;
+    border-radius: 10px;
+    color: white !important;
+}
+.icone-rodape li a:hover{
+    color: black !important;
+}
